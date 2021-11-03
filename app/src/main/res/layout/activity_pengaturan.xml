@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".PengaturanActivity"
+    android:layout_marginRight="30dp"
+    android:layout_marginLeft="30dp"
+    android:layout_marginTop="30dp">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Pengaturan"
+            android:textSize="10pt"
+            android:textColor="@color/black"
+            android:fontFamily="@font/poppins_bold"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Ganti Password"
+            android:layout_marginBottom="10dp"
+            android:fontFamily="@font/poppins_bold"
+            android:textSize="9pt"
+            android:textColor="@color/black"
+            android:layout_marginTop="20dp"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Password Saat ini"
+            android:fontFamily="@font/poppins_medium"
+            android:textSize="8pt"
+            android:textColor="@color/black" />
+        <EditText
+            android:id="@+id/setting_pass_lama"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textPassword"
+            android:textColor="@color/black"
+            android:fontFamily="@font/poppins_medium"
+            android:textSize="8pt"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Password Baru"
+            android:fontFamily="@font/poppins_medium"
+            android:textSize="8pt"
+            android:textColor="@color/black"
+            android:layout_marginTop="10dp"/>
+        <EditText
+            android:id="@+id/setting_pass_baru"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textPassword"
+            android:textColor="@color/black"
+            android:fontFamily="@font/poppins_medium"
+            android:textSize="8pt"/>
+
+        <Button
+            android:id="@+id/setting_save"
+            android:background="@drawable/custom_btnsimpan"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:fontFamily="@font/poppins_medium"
+            android:textSize="16dp"
+            android:textColor="#FFFFFF"
+            android:text="Simpan" />
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/custom_btnkembali"
+            android:onClick="toHome"
+            android:fontFamily="@font/poppins_medium"
+            android:textSize="16dp"
+            android:textColor="#FFFFFF"
+            android:text="Kembali" />
+    </LinearLayout>
+    <RelativeLayout
+        android:layout_marginBottom="30dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true">
+
+        <ImageView
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="-23dp"
+            android:src="@drawable/oska" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/poppins_bold"
+                android:layout_marginLeft="15dp"
+                android:text="Tentang Aplikasi"
+                android:textColor="@color/black"
+                android:textSize="9pt" />
+
+            <TextView
+                android:layout_marginTop="10dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                android:text="Aplikasi ini dibuat oleh:\nNama\t : Oska Aditya P.\nNIM\t\t    : 1741720050"
+                android:textSize="8pt"
+                android:fontFamily="@font/poppins_medium"
+                android:textColor="@color/black"/>
+        </LinearLayout>
+    </RelativeLayout>
+
+</RelativeLayout>
